@@ -10,6 +10,9 @@ redirect_from:
 
 
 
+
+
+
 Hi, I'm Shachar.
 
 I’m a Ph.D. candidate at the Hebrew University of Jerusalem, exploring the field of Natural Language Processing (NLP), under the supervision of Prof. [Omri Abend](https://www.cs.huji.ac.il/~oabend/).
