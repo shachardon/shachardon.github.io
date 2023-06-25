@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Shachar Don-Yehiya"
   avatar           : "profile.png"
-  bio              : "Ph.D. candidate, NLP"
-  location         : "The Hebrew University of Jerusalem"
+  bio              : "Ph.D. candidate, NLP, The Hebrew University of Jerusalem"
+  # location         : "The Hebrew University of Jerusalem"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=fR8UIf0AAAAJ&hl=iw"
@@ -103,7 +103,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   LinkedIn         : "https://www.linkedin.com/in/shachar-don-yehiya-33982618b/"
-  orcid            : "http://orcid.org/yourorcidurl"
+  # orcid            : "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
