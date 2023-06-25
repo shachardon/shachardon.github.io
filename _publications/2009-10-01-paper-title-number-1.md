@@ -5,5 +5,5 @@ date: 2022-12-06
 permalink: /publication/2009-10-01-paper-title-number-1
 venue: 'Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing'
 paperurl: 'https://aclanthology.org/2022.emnlp-main.767/'
-excerpt: 'Shachar Don-Yehiya, Leshem Choshen, and Omri Abend.'
+excerpt: 'Shachar Don-Yehiya, [Leshem Choshe](https://ktilana.wixsite.com/leshem-choshen)https://ktilana.wixsite.com/leshem-choshenn, and [Omri Abend](https://www.cs.huji.ac.il/~oabend/)https://www.cs.huji.ac.il/~oabend/.'
 ---
