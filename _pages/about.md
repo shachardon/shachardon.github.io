@@ -19,3 +19,13 @@ I’m a Ph.D. candidate at the Hebrew University of Jerusalem, exploring the fie
 I’m interested in quality estimation, dialogues and interaction -- between a person and a model, or even between two models.
 
 In addition, I am a research intern at IBM Research, working on collaboratively pretraining by recycling finetuned models.
+
+
+### Check out the ShareLM 💬 project!
+
+I'm working on a fascinating project called [ShareLM](https://sharelm.github.io/). The ShareLM plugin is a Chrome extension that makes it easy for you to contribute your own human-model interactions.
+
+The Goal -> Collecting an ever-growing dataset of conversations, for the benefit of the open-source community 💬🥳
+
+Feel free to reach me!
+
