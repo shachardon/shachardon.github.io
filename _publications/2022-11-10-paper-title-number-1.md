@@ -1,7 +1,7 @@
 ---
 title: "Where to start? Analyzing the potential value of intermediate models"
 collection: publications
-date: 2023
+date: 2023-11-23
 venue: EMNLP
 permalink: /publication/2022-11-10-paper-title-number-1
 paperurl: 'https://arxiv.org/abs/2211.00107'
