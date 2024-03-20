@@ -31,5 +31,5 @@ The [ShareLM](https://sharelm.github.io/) plugin is a Chrome extension that make
 
 The Goal -> Collecting an ever-growing dataset of conversations, for the benefit of the open-source community 💬🥳
 
-![Alt text](/images/saved_con.png)
+![The ShareLM plugin in action](/images/saved_conv.png)
 
