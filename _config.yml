@@ -86,7 +86,7 @@ author:
   # location         : "The Hebrew University of Jerusalem"
   employer         :
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "https://scholar.google.com/citations?user=fR8UIf0AAAAJ&hl=iw"
+  # googlescholar    : "https://scholar.google.com/citations?user=fR8UIf0AAAAJ&hl=iw"
   semanticscholar  : "https://www.semanticscholar.org/author/Shachar-Don-Yehiya/2165660883"
   email            : "shachar.don-yehiya@mail.huji.ac.il"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
