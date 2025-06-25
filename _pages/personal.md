@@ -11,17 +11,21 @@ When I'm not working on papers, I enjoy traveling and exploring new places with 
 
 Here are some highlights from my travels:
 
-### [Location Name]
-![Description of the photo](/images/travel/photo1.jpg)
-*Brief description of the place and experience*
+### Utah 2025
+![Dead Horse Point state park](/images/utah.png)
+*Dead horse point state park*
 
-### [Another Location]
-![Description of the photo](/images/travel/photo2.jpg)
-*Brief description of the place and experience*
+### Scotland 2024
+![Description of the photo](/images/scotland_24.png)
+*Old Man of Storr*
 
-### [Yet Another Location]
-![Description of the photo](/images/travel/photo3.jpg)
-*Brief description of the place and experience*
+### Scotland 2023
+![Description of the photo](/images/scotland_23.png)
+*The West Highland Way*
+
+### Canada 2022
+![Description of the photo](/images/canada.png)
+*Wilcox Pass Trail, Alberta*
 
 ---
 
