@@ -12,11 +12,11 @@ author_profile: true
 ## 2025
 
 **The Future of Open Human Feedback**  
-Shachar Don-Yehiya, Ben Burtenshaw, R. Astudillo, Cailean Osborne, Mimansa Jaiswal, Tzu-Sheng Kuo, Wenting Zhao, Idan Shenfeld, Andi Peng, M. Yurochkin, Atoosa Kasirzadeh, Yangsibo Huang, Tatsunori Hashimoto, Yacine Jernite, Daniel Vila-Suero, [Omri Abend](https://www.cs.huji.ac.il/~oabend/), Jennifer Ding, Sara Hooker, Hannah Rose Kirk, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen)
+Shachar Don-Yehiya, Ben Burtenshaw, R. Astudillo, Cailean Osborne, Mimansa Jaiswal, Tzu-Sheng Kuo, Wenting Zhao, Idan Shenfeld, Andi Peng, M. Yurochkin, Atoosa Kasirzadeh, Yangsibo Huang, Tatsunori Hashimoto, Yacine Jernite, Daniel Vila-Suero, [Omri Abend](https://www.cs.huji.ac.il/~oabend/), Jennifer Ding, Sara Hooker, Hannah Rose Kirk, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen)  
 *Natrue Machine Intelligence* [[Paper](https://www.nature.com/articles/s42256-025-01038-2)]
 
 **The ShareLM Collection and Plugin: Contributing Human-Model Chats for the Benefit of the Community**  
-Shachar Don-Yehiya, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), and [Omri Abend](https://www.cs.huji.ac.il/~oabend/).
+Shachar Don-Yehiya, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), and [Omri Abend](https://www.cs.huji.ac.il/~oabend/).  
 *ACL* [[Paper](https://arxiv.org/abs/2408.08291)]
 
 
@@ -40,12 +40,13 @@ Shachar Don-Yehiya, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen)
 Shachar Don-Yehiya, Elad Venezian, Colin Raffel, Noam Slonim, Yoav Katz, and [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen).  
 *ACL* [[Paper](https://aclanthology.org/2023.acl-long.46/)]
 
+**Where to start? Analyzing the potential value of intermediate models**  
+[Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), Elad Venezian, Shachar Don-Yehiya, Noam Slonim, and Yoav Katz.  
+*EMNLP* [[Paper](https://aclanthology.org/2023.emnlp-main.90/)]
+
 ## 2022
 
 **PreQuEL: Quality Estimation of Machine Translation Outputs in Advance**  
 Shachar Don-Yehiya, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), and [Omri Abend](https://www.cs.huji.ac.il/~oabend/).  
 *EMNLP* [[Paper](https://aclanthology.org/2022.emnlp-main.767/)]
 
-**Where to start? Analyzing the potential value of intermediate models**  
-[Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), Elad Venezian, Shachar Don-Yehiya, Noam Slonim, and Yoav Katz.  
-*EMNLP* [[Paper](https://aclanthology.org/2023.emnlp-main.90/)]
