@@ -26,6 +26,11 @@ In addition, I am a research intern at IBM Research, working on collaboratively 
 <br>
 ### Check out ShareLM 💬!
 
+<a href="https://sharelm.github.io/" target="_blank">
+  <img src="https://sharelm.github.io/static/images/Picture1.png" 
+       alt="I Support ShareLM" style="max-width: 150px;" />
+</a>
+
 The [ShareLM](https://sharelm.github.io/) plugin is a Chrome extension that makes it easy for you to contribute your own human-model interactions.
 
 The Goal -> Collecting an ever-growing dataset of conversations, for the benefit of the open-source community 💬🥳
