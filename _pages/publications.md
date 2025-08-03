@@ -17,7 +17,7 @@ Shachar Don-Yehiya, Ben Burtenshaw, R. Astudillo, Cailean Osborne, Mimansa Jaisw
 
 **The ShareLM Collection and Plugin: Contributing Human-Model Chats for the Benefit of the Community**  
 Shachar Don-Yehiya, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), and [Omri Abend](https://www.cs.huji.ac.il/~oabend/).  
-*ACL* [[Paper](https://arxiv.org/abs/2408.08291)]
+*ACL Demo Track* [[Paper](https://aclanthology.org/2025.acl-demo.17/)]
 
 
 ## 2024
