@@ -16,7 +16,7 @@ author_profile: true
 
 **The Future of Open Human Feedback**  
 <span class="me">Shachar Don-Yehiya</span>, Ben Burtenshaw, R. Astudillo, Cailean Osborne, Mimansa Jaiswal, Tzu-Sheng Kuo, Wenting Zhao, Idan Shenfeld, Andi Peng, M. Yurochkin, Atoosa Kasirzadeh, Yangsibo Huang, Tatsunori Hashimoto, Yacine Jernite, Daniel Vila-Suero, [Omri Abend](https://www.cs.huji.ac.il/~oabend/), Jennifer Ding, Sara Hooker, Hannah Rose Kirk, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen)  
-*Natrue Machine Intelligence* <a class="pub-link" href="https://www.nature.com/articles/s42256-025-01038-2">Paper</a>
+*Nature Machine Intelligence* <a class="pub-link" href="https://www.nature.com/articles/s42256-025-01038-2">Paper</a>
 
 **The ShareLM Collection and Plugin: Contributing Human-Model Chats for the Benefit of the Community**  
 <span class="me">Shachar Don-Yehiya</span>, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), and [Omri Abend](https://www.cs.huji.ac.il/~oabend/).  
@@ -30,7 +30,7 @@ author_profile: true
 *Arxiv* <a class="pub-link" href="https://arxiv.org/abs/2407.10944">Paper</a>
 
 **Unitxt: Flexible, Shareable and Reusable Data Preparation and Evaluation for Generative AI**  
-Elron Bandel, Yotam Perlitz, Elad Venezian, Roni Friedman-Melamed, Ofir Arviv, Matan Orbach, <span class="me">Shachar Don-Yehyia</span>, Dafna Sheinwald, Ariel Gera, Michal Shmueli-Scheuer, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), and Yoav Katz.  
+Elron Bandel, Yotam Perlitz, Elad Venezian, Roni Friedman-Melamed, Ofir Arviv, Matan Orbach, <span class="me">Shachar Don-Yehiya</span>, Dafna Sheinwald, Ariel Gera, Michal Shmueli-Scheuer, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), and Yoav Katz.  
 *NAACL* <a class="pub-link" href="https://aclanthology.org/2024.naacl-demo.21/">Paper</a>
 
 ## 2023
