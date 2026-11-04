@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
-Hi, I'm Shachar.
+<p class="lead-hello">Hi, I'm Shachar 👋</p>
 
 I’m a Ph.D. candidate specializing in Natural Language Processing (NLP) at the Hebrew University of Jerusalem, under the supervision of [Omri Abend](https://www.cs.huji.ac.il/~oabend/). 
 
@@ -19,30 +19,30 @@ Drawing motivation and methodologies from cognitive science literature on human-
 In addition, I am a research intern at IBM Research, working on collaboratively pretraining by recycling finetuned models and evaluation.
 
 
-<br>
-<br>
+## News
 
-<a href="https://iscol-meeting.github.io/iscol2026/" target="_blank">
-  <img src="/images/iscol_2026_logo.png" 
-       alt="ISCOL 2026 logo" style="max-width: 250px;" />
-</a>
+<div class="news">
 
-### Join us at ISCOL 2026 🎉!
+  <div class="news-card">
+    <a class="news-card__img" href="https://iscol-meeting.github.io/iscol2026/" target="_blank">
+      <img src="/images/iscol_2026_logo.png" alt="ISCOL 2026 logo" />
+    </a>
+    <div>
+      <span class="news-card__tag">Dec 23, 2026</span>
+      <h3>Join us at ISCOL 2026 🎉</h3>
+      <p>I'm co-organizing <a href="https://iscol-meeting.github.io/iscol2026/" target="_blank">ISCOL 2026</a>, the Israel Seminar on Computational Linguistics. It will be held on <strong>December 23, 2026</strong> at the Hebrew University of Jerusalem. Come share your work, meet the Israeli NLP community, and say hi!</p>
+    </div>
+  </div>
 
-I'm co-organizing [ISCOL 2026](https://iscol-meeting.github.io/iscol2026/), the Israel Seminar on Computational Linguistics. It will be held on **December 23, 2026** at the Hebrew University of Jerusalem. Come share your work, meet the Israeli NLP community, and say hi!
+  <div class="news-card">
+    <a class="news-card__img" href="https://sharelm.github.io/" target="_blank">
+      <img src="https://sharelm.github.io/static/images/Picture1.png" alt="I Support ShareLM" />
+    </a>
+    <div>
+      <span class="news-card__tag">Project</span>
+      <h3>Check out ShareLM 💬</h3>
+      <p>The <a href="https://sharelm.github.io/" target="_blank">ShareLM</a> plugin is a Chrome extension that makes it easy for you to contribute your own human-model interactions. The goal: collecting an ever-growing dataset of conversations, for the benefit of the open-source community 💬🥳</p>
+    </div>
+  </div>
 
-<br>
-
-<a href="https://sharelm.github.io/" target="_blank">
-  <img src="https://sharelm.github.io/static/images/Picture1.png" 
-       alt="I Support ShareLM" style="max-width: 150px;" />
-</a>
-
-### Check out ShareLM 💬!
-
-The [ShareLM](https://sharelm.github.io/) plugin is a Chrome extension that makes it easy for you to contribute your own human-model interactions.
-
-The Goal -> Collecting an ever-growing dataset of conversations, for the benefit of the open-source community 💬🥳
-
-<br>
-
+</div>
