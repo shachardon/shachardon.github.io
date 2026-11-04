@@ -1,0 +1,8 @@
+{% assign a = site.author %}
+<ul class="sd-socials{% if include.class %} {{ include.class }}{% endif %}">
+  {% if a.email %}<li><a href="mailto:{{ a.email }}" title="Email">{% include icon.html name="mail" %}<span>Email</span></a></li>{% endif %}
+  {% if a.googlescholar %}<li><a href="{{ a.googlescholar }}" title="Google Scholar">{% include icon.html name="scholar" %}<span>Scholar</span></a></li>{% endif %}
+  {% if a.github %}<li><a href="https://github.com/{{ a.github }}" title="GitHub">{% include icon.html name="github" %}<span>GitHub</span></a></li>{% endif %}
+  {% if a.twitter %}<li><a href="https://twitter.com/{{ a.twitter }}" title="X / Twitter">{% include icon.html name="x" %}<span>Twitter</span></a></li>{% endif %}
+  {% if a.LinkedIn %}<li><a href="{{ a.LinkedIn }}" title="LinkedIn">{% include icon.html name="linkedin" %}<span>LinkedIn</span></a></li>{% endif %}
+</ul>

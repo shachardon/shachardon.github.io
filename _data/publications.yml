@@ -1,0 +1,79 @@
+# Publications — newest first. Rendered on /publications/ and (for `selected: true`) on the home page.
+#
+# Fields:
+#   title    : paper title
+#   authors  : author list (Markdown links allowed). "Shachar Don-Yehiya" is highlighted automatically.
+#   venue    : short venue name shown as a badge
+#   year     : publication year (papers are grouped by this)
+#   topics   : any of: interaction, feedback, evaluation, collaborative  (used by the filter chips)
+#   selected : true to feature on the home page
+#   links    : any of paper / code / demo / data / slides / video, each a URL
+
+- title: "The Future of Open Human Feedback"
+  authors: "Shachar Don-Yehiya, Ben Burtenshaw, R. Astudillo, Cailean Osborne, Mimansa Jaiswal, Tzu-Sheng Kuo, Wenting Zhao, Idan Shenfeld, Andi Peng, M. Yurochkin, Atoosa Kasirzadeh, Yangsibo Huang, Tatsunori Hashimoto, Yacine Jernite, Daniel Vila-Suero, [Omri Abend](https://www.cs.huji.ac.il/~oabend/), Jennifer Ding, Sara Hooker, Hannah Rose Kirk, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen)"
+  venue: "Nature Machine Intelligence"
+  year: 2025
+  topics: [feedback]
+  selected: true
+  links:
+    paper: "https://www.nature.com/articles/s42256-025-01038-2"
+
+- title: "The ShareLM Collection and Plugin: Contributing Human-Model Chats for the Benefit of the Community"
+  authors: "Shachar Don-Yehiya, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), and [Omri Abend](https://www.cs.huji.ac.il/~oabend/)"
+  venue: "ACL Demo Track"
+  year: 2025
+  topics: [feedback, interaction]
+  selected: true
+  links:
+    paper: "https://aclanthology.org/2025.acl-demo.17/"
+    website: "https://sharelm.github.io/"
+
+- title: "Naturally Occurring Feedback is Common, Extractable and Useful"
+  authors: "Shachar Don-Yehiya, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), and [Omri Abend](https://www.cs.huji.ac.il/~oabend/)"
+  venue: "arXiv"
+  year: 2024
+  topics: [feedback]
+  selected: true
+  links:
+    paper: "https://arxiv.org/abs/2407.10944"
+
+- title: "Unitxt: Flexible, Shareable and Reusable Data Preparation and Evaluation for Generative AI"
+  authors: "Elron Bandel, Yotam Perlitz, Elad Venezian, Roni Friedman-Melamed, Ofir Arviv, Matan Orbach, Shachar Don-Yehiya, Dafna Sheinwald, Ariel Gera, Michal Shmueli-Scheuer, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), and Yoav Katz"
+  venue: "NAACL"
+  year: 2024
+  topics: [evaluation]
+  links:
+    paper: "https://aclanthology.org/2024.naacl-demo.21/"
+
+- title: "Human Learning by Model Feedback: The Dynamics of Iterative Prompting with Midjourney"
+  authors: "Shachar Don-Yehiya, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), and [Omri Abend](https://www.cs.huji.ac.il/~oabend/)"
+  venue: "EMNLP"
+  year: 2023
+  topics: [interaction]
+  selected: true
+  links:
+    paper: "https://aclanthology.org/2023.emnlp-main.253/"
+
+- title: "ColD Fusion: Collaborative Descent for Distributed Multitask Finetuning"
+  authors: "Shachar Don-Yehiya, Elad Venezian, Colin Raffel, Noam Slonim, Yoav Katz, and [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen)"
+  venue: "ACL"
+  year: 2023
+  topics: [collaborative]
+  links:
+    paper: "https://aclanthology.org/2023.acl-long.46/"
+
+- title: "Where to start? Analyzing the potential value of intermediate models"
+  authors: "[Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), Elad Venezian, Shachar Don-Yehiya, Noam Slonim, and Yoav Katz"
+  venue: "EMNLP"
+  year: 2023
+  topics: [collaborative]
+  links:
+    paper: "https://aclanthology.org/2023.emnlp-main.90/"
+
+- title: "PreQuEL: Quality Estimation of Machine Translation Outputs in Advance"
+  authors: "Shachar Don-Yehiya, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), and [Omri Abend](https://www.cs.huji.ac.il/~oabend/)"
+  venue: "EMNLP"
+  year: 2022
+  topics: [evaluation]
+  links:
+    paper: "https://aclanthology.org/2022.emnlp-main.767/"

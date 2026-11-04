@@ -1,0 +1,87 @@
+---
+layout: sd-base
+---
+{% include base_path %}
+{% assign a = site.author %}
+
+<section class="sd-hero">
+  <div class="sd-hero__bg" aria-hidden="true"></div>
+  <div class="sd-wrap sd-hero__grid">
+    <div class="sd-hero__text">
+      <p class="sd-eyebrow">{{ page.eyebrow }}</p>
+      <h1 class="sd-hero__title">{{ page.headline }}</h1>
+      <p class="sd-hero__lede">{{ page.lede | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+      {% include sd-socials.html %}
+    </div>
+
+    <div class="sd-hero__visual" aria-hidden="true">
+      <div class="sd-portrait">
+        <img src="{{ base_path }}/images/web/shachar.jpg" alt="" width="640" height="643">
+      </div>
+      <div class="sd-bubble sd-bubble--model">
+        <span class="sd-bubble__who">model</span>
+        Here's a summary of the paper in five bullet points…
+      </div>
+      <div class="sd-bubble sd-bubble--human">
+        <span class="sd-bubble__who">you</span>
+        Hmm, close, but can you make it shorter?
+        <span class="sd-bubble__tag">{% include icon.html name="spark" %} implicit feedback</span>
+      </div>
+      <div class="sd-bubble sd-bubble--model sd-bubble--3">
+        <span class="sd-bubble__who">model</span>
+        Got it, here's a tighter version.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sd-section sd-wrap sd-about" data-reveal>
+  <div class="sd-section__head">
+    <p class="sd-kicker">01</p>
+    <h2 class="sd-h2">About</h2>
+  </div>
+  <div class="sd-prose">
+    {{ content }}
+  </div>
+</section>
+
+
+{% if site.data.news %}
+<section class="sd-section sd-wrap" data-reveal>
+  <div class="sd-section__head">
+    <p class="sd-kicker">02</p>
+    <h2 class="sd-h2">News</h2>
+  </div>
+  <div class="sd-news">
+    {% for n in site.data.news %}
+      <article class="sd-news__item">
+        {% if n.image %}
+          <a class="sd-news__img" href="{{ n.link }}">
+            <img src="{% unless n.image contains '://' %}{{ base_path }}{% endunless %}{{ n.image }}" alt="{{ n.image_alt }}" loading="lazy">
+          </a>
+        {% endif %}
+        <div class="sd-news__body">
+          <span class="sd-badge sd-badge--soft">{{ n.label }}</span>
+          <h3>{% if n.link %}<a href="{{ n.link }}">{{ n.title }}</a>{% else %}{{ n.title }}{% endif %}</h3>
+          {{ n.body | markdownify }}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="sd-section sd-wrap" data-reveal>
+  <div class="sd-section__head sd-section__head--split">
+    <div>
+      <p class="sd-kicker">03</p>
+      <h2 class="sd-h2">Selected publications</h2>
+    </div>
+    <a class="sd-link-arrow" href="{{ base_path }}/publications/">All publications {% include icon.html name="arrow" %}</a>
+  </div>
+  <div class="sd-pubs">
+    {% for p in site.data.publications %}
+      {% if p.selected %}{% include sd-pub.html pub=p show_year=true %}{% endif %}
+    {% endfor %}
+  </div>
+</section>

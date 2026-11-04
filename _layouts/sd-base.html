@@ -1,0 +1,62 @@
+{% include base_path %}<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include seo.html %}
+    <link href="{{ base_path }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+    <link rel="icon" href="{{ base_path }}/images/rabbit.png" type="image/png">
+    <meta name="theme-color" content="#faf8f4" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0e1014" media="(prefers-color-scheme: dark)">
+    <script>
+      (function () {
+        document.documentElement.className += " js";
+        try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="{{ base_path }}/assets/css/site.css?v={{ site.time | date: '%s' }}">
+  </head>
+
+  <body class="sd">
+    <a class="skip" href="#content">Skip to content</a>
+    {% include sd-header.html %}
+
+    <main id="content" class="sd-main">
+      {{ content }}
+    </main>
+
+    {% include sd-footer.html %}
+
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var btn = document.querySelector("[data-theme-toggle]");
+        function current() {
+          var t = root.getAttribute("data-theme");
+          if (t) return t;
+          return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        if (btn) btn.addEventListener("click", function () {
+          var next = current() === "dark" ? "light" : "dark";
+          root.setAttribute("data-theme", next);
+          try { localStorage.setItem("theme", next); } catch (e) {}
+        });
+
+        // Reveal-on-scroll
+        var els = document.querySelectorAll("[data-reveal]");
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } });
+          }, { rootMargin: "0px 0px -8% 0px" });
+          els.forEach(function (el) { io.observe(el); });
+        } else {
+          els.forEach(function (el) { el.classList.add("is-in"); });
+        }
+      })();
+    </script>
+    {% include analytics.html %}
+  </body>
+</html>

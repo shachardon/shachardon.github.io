@@ -1,0 +1,20 @@
+{% assign p = include.pub %}
+{% assign me = site.author.name %}
+{% capture me_html %}<span class="me">{{ me }}</span>{% endcapture %}
+<article class="sd-pub" data-topics="{{ p.topics | join: ' ' }}">
+  <div class="sd-pub__meta">
+    <span class="sd-badge">{{ p.venue }}</span>
+    {% if include.show_year %}<span class="sd-pub__year">{{ p.year }}</span>{% endif %}
+  </div>
+  <h3 class="sd-pub__title">
+    {% if p.links.paper %}<a href="{{ p.links.paper }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}
+  </h3>
+  <p class="sd-pub__authors">{{ p.authors | markdownify | remove: '<p>' | remove: '</p>' | strip | replace: me, me_html }}</p>
+  {% if p.links %}
+    <div class="sd-pub__links">
+      {% for l in p.links %}
+        <a class="sd-chip" href="{{ l[1] }}">{% if l[0] == "paper" %}{% include icon.html name="paper" %}{% else %}{% include icon.html name="external" %}{% endif %}{{ l[0] | capitalize }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
+</article>

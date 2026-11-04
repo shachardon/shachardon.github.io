@@ -1,0 +1,20 @@
+# News items for the home page — newest first.
+#   label : small tag above the title (a date, "Project", "Paper", ...)
+#   title : headline (emoji welcome)
+#   body  : Markdown
+#   link  : where the logo/title points
+#   image : logo or thumbnail (local path or URL)
+
+- label: "Dec 23, 2026"
+  title: "Join us at ISCOL 2026 🎉"
+  body: "I'm co-organizing [ISCOL 2026](https://iscol-meeting.github.io/iscol2026/), the Israel Seminar on Computational Linguistics. It will be held on **December 23, 2026** at the Hebrew University of Jerusalem. Come share your work, meet the Israeli NLP community, and say hi!"
+  link: "https://iscol-meeting.github.io/iscol2026/"
+  image: "/images/web/iscol_2026_logo.png"
+  image_alt: "ISCOL 2026 logo"
+
+- label: "Project"
+  title: "Check out ShareLM 💬"
+  body: "The [ShareLM](https://sharelm.github.io/) plugin is a Chrome extension that makes it easy for you to contribute your own human-model interactions. The goal: collecting an ever-growing dataset of conversations, for the benefit of the open-source community 💬🥳"
+  link: "https://sharelm.github.io/"
+  image: "https://sharelm.github.io/static/images/Picture1.png"
+  image_alt: "I Support ShareLM"

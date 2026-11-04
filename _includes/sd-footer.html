@@ -1,0 +1,10 @@
+{% include base_path %}
+<footer class="sd-footer">
+  <div class="sd-wrap sd-footer__inner">
+    <div>
+      <p class="sd-footer__name">{{ site.title }}</p>
+      <p class="sd-footer__meta">&copy; {{ site.time | date: '%Y' }} · Built with Jekyll</p>
+    </div>
+    {% include sd-socials.html class="sd-socials--compact" %}
+  </div>
+</footer>

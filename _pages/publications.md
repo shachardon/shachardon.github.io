@@ -1,56 +1,54 @@
 ---
-layout: archive
+layout: sd-page
 title: "Publications"
+eyebrow: "Research output"
 permalink: /publications/
-author_profile: true
 ---
+{% comment %}
+  Publications live in _data/publications.yml — add new papers there (newest first).
+{% endcomment %}
+{% assign pubs = site.data.publications %}
+{% assign first = pubs | first %}
+{% assign last = pubs | last %}
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
-
-<div class="pubs" markdown="1">
-
-
-## 2025
-
-**The Future of Open Human Feedback**  
-<span class="me">Shachar Don-Yehiya</span>, Ben Burtenshaw, R. Astudillo, Cailean Osborne, Mimansa Jaiswal, Tzu-Sheng Kuo, Wenting Zhao, Idan Shenfeld, Andi Peng, M. Yurochkin, Atoosa Kasirzadeh, Yangsibo Huang, Tatsunori Hashimoto, Yacine Jernite, Daniel Vila-Suero, [Omri Abend](https://www.cs.huji.ac.il/~oabend/), Jennifer Ding, Sara Hooker, Hannah Rose Kirk, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen)  
-*Nature Machine Intelligence* <a class="pub-link" href="https://www.nature.com/articles/s42256-025-01038-2">Paper</a>
-
-**The ShareLM Collection and Plugin: Contributing Human-Model Chats for the Benefit of the Community**  
-<span class="me">Shachar Don-Yehiya</span>, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), and [Omri Abend](https://www.cs.huji.ac.il/~oabend/).  
-*ACL Demo Track* <a class="pub-link" href="https://aclanthology.org/2025.acl-demo.17/">Paper</a>
-
-
-## 2024
-
-**Naturally Occurring Feedback is Common, Extractable and Useful**  
-<span class="me">Shachar Don-Yehiya</span>, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), and [Omri Abend](https://www.cs.huji.ac.il/~oabend/).  
-*Arxiv* <a class="pub-link" href="https://arxiv.org/abs/2407.10944">Paper</a>
-
-**Unitxt: Flexible, Shareable and Reusable Data Preparation and Evaluation for Generative AI**  
-Elron Bandel, Yotam Perlitz, Elad Venezian, Roni Friedman-Melamed, Ofir Arviv, Matan Orbach, <span class="me">Shachar Don-Yehiya</span>, Dafna Sheinwald, Ariel Gera, Michal Shmueli-Scheuer, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), and Yoav Katz.  
-*NAACL* <a class="pub-link" href="https://aclanthology.org/2024.naacl-demo.21/">Paper</a>
-
-## 2023
-
-**Human Learning by Model Feedback: The Dynamics of Iterative Prompting with Midjourney**  
-<span class="me">Shachar Don-Yehiya</span>, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), and [Omri Abend](https://www.cs.huji.ac.il/~oabend/).  
-*EMNLP* <a class="pub-link" href="https://aclanthology.org/2023.emnlp-main.253/">Paper</a>
-
-**ColD Fusion: Collaborative Descent for Distributed Multitask Finetuning**  
-<span class="me">Shachar Don-Yehiya</span>, Elad Venezian, Colin Raffel, Noam Slonim, Yoav Katz, and [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen).  
-*ACL* <a class="pub-link" href="https://aclanthology.org/2023.acl-long.46/">Paper</a>
-
-**Where to start? Analyzing the potential value of intermediate models**  
-[Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), Elad Venezian, <span class="me">Shachar Don-Yehiya</span>, Noam Slonim, and Yoav Katz.  
-*EMNLP* <a class="pub-link" href="https://aclanthology.org/2023.emnlp-main.90/">Paper</a>
-
-## 2022
-
-**PreQuEL: Quality Estimation of Machine Translation Outputs in Advance**  
-<span class="me">Shachar Don-Yehiya</span>, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), and [Omri Abend](https://www.cs.huji.ac.il/~oabend/).  
-*EMNLP* <a class="pub-link" href="https://aclanthology.org/2022.emnlp-main.767/">Paper</a>
-
+<div class="sd-pubbar">
+  <p class="sd-pubbar__count"><strong>{{ pubs.size }}</strong> papers · {{ last.year }}–{{ first.year }} · also on <a href="{{ site.author.googlescholar }}">Google Scholar</a></p>
+  <div class="sd-filters" role="group" aria-label="Filter by topic">
+    <button type="button" class="sd-filter" data-filter="all" aria-pressed="true">All</button>
+    <button type="button" class="sd-filter" data-filter="interaction" aria-pressed="false">Human–AI interaction</button>
+    <button type="button" class="sd-filter" data-filter="feedback" aria-pressed="false">Human feedback</button>
+    <button type="button" class="sd-filter" data-filter="evaluation" aria-pressed="false">Evaluation</button>
+    <button type="button" class="sd-filter" data-filter="collaborative" aria-pressed="false">Collaborative training</button>
+  </div>
 </div>
+
+{% assign years = pubs | group_by: "year" %}
+{% for y in years %}
+<section class="sd-year" data-year>
+  <h2 class="sd-year__label">{{ y.name }}</h2>
+  <div class="sd-pubs">
+    {% for p in y.items %}{% include sd-pub.html pub=p %}{% endfor %}
+  </div>
+</section>
+{% endfor %}
+
+<script>
+  (function () {
+    var btns = document.querySelectorAll(".sd-filter");
+    var pubs = document.querySelectorAll(".sd-pub");
+    var years = document.querySelectorAll("[data-year]");
+    btns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var f = b.getAttribute("data-filter");
+        btns.forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+        pubs.forEach(function (p) {
+          var show = f === "all" || (" " + p.getAttribute("data-topics") + " ").indexOf(" " + f + " ") > -1;
+          p.hidden = !show;
+        });
+        years.forEach(function (y) {
+          y.hidden = !y.querySelector(".sd-pub:not([hidden])");
+        });
+      });
+    });
+  })();
+</script>
