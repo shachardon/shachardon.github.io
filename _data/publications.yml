@@ -9,6 +9,24 @@
 #   selected : true to feature on the home page
 #   links    : any of paper / code / demo / data / slides / video, each a URL
 
+- title: "User Feedback Provides a Unique Signal that LLMs Can not Detect"
+  authors: "Shachar Don-Yehiya, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), and [Omri Abend](https://www.cs.huji.ac.il/~oabend/)"
+  venue: "arXiv"
+  year: 2026
+  topics: [feedback]
+  selected: true
+  links:
+    paper: "https://arxiv.org/abs/2609.02859"
+
+- title: "Mediocrity is the key for LLM as a Judge Anchor Selection"
+  authors: "Shachar Don-Yehiya, Asaf Yehudai, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen), and [Omri Abend](https://www.cs.huji.ac.il/~oabend/)"
+  venue: "ACL"
+  year: 2026
+  topics: [evaluation]
+  selected: true
+  links:
+    paper: "https://aclanthology.org/2026.acl-long.706/"
+
 - title: "The Future of Open Human Feedback"
   authors: "Shachar Don-Yehiya, Ben Burtenshaw, R. Astudillo, Cailean Osborne, Mimansa Jaiswal, Tzu-Sheng Kuo, Wenting Zhao, Idan Shenfeld, Andi Peng, M. Yurochkin, Atoosa Kasirzadeh, Yangsibo Huang, Tatsunori Hashimoto, Yacine Jernite, Daniel Vila-Suero, [Omri Abend](https://www.cs.huji.ac.il/~oabend/), Jennifer Ding, Sara Hooker, Hannah Rose Kirk, [Leshem Choshen](https://ktilana.wixsite.com/leshem-choshen)"
   venue: "Nature Machine Intelligence"
