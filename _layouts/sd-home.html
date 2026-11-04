@@ -20,20 +20,68 @@ layout: sd-base
       </div>
       <div class="sd-bubble sd-bubble--model">
         <span class="sd-bubble__who">model</span>
-        Here's a summary of the paper in five bullet points…
+        <span class="sd-bubble__text">Here's a summary of the paper in five bullet points…</span>
       </div>
       <div class="sd-bubble sd-bubble--human">
         <span class="sd-bubble__who">you</span>
-        Hmm, close, but can you make it shorter?
-        <span class="sd-bubble__tag">{% include icon.html name="spark" %} implicit feedback</span>
+        <span class="sd-bubble__text">Hmm, close, but can you make it shorter?</span>
+        <span class="sd-bubble__tag">{% include icon.html name="spark" %} feedback</span>
       </div>
       <div class="sd-bubble sd-bubble--model sd-bubble--3">
         <span class="sd-bubble__who">model</span>
-        Got it, here's a tighter version.
+        <span class="sd-bubble__text">Got it, here's a tighter version.</span>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  // Hero chat: reveal bubbles one at a time and type their text character by character.
+  (function () {
+    var visual = document.querySelector(".sd-hero__visual");
+    if (!visual) return;
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var bubbles = visual.querySelectorAll(".sd-bubble");
+    visual.classList.add("sd-typing");
+
+    function type(bubble, done) {
+      var el = bubble.querySelector(".sd-bubble__text");
+      var full = el.textContent;
+      // Typed part + caret + invisible remainder, so the bubble keeps its final size.
+      var typed = document.createElement("span");
+      var caret = document.createElement("span");
+      var rest = document.createElement("span");
+      caret.className = "sd-caret";
+      rest.className = "sd-bubble__rest";
+      rest.textContent = full;
+      el.textContent = "";
+      el.appendChild(typed); el.appendChild(caret); el.appendChild(rest);
+      var speed = bubble.classList.contains("sd-bubble--human") ? 45 : 28;
+      var i = 0;
+      (function step() {
+        i++;
+        typed.textContent = full.slice(0, i);
+        rest.textContent = full.slice(i);
+        if (i < full.length) {
+          setTimeout(step, speed + Math.random() * speed * 0.6);
+        } else {
+          setTimeout(function () { caret.remove(); rest.remove(); bubble.classList.add("is-done"); done(); }, 350);
+        }
+      })();
+    }
+
+    var idx = 0;
+    function next() {
+      if (idx >= bubbles.length) return;
+      var b = bubbles[idx++];
+      b.classList.add("is-shown");
+      setTimeout(function () {
+        type(b, function () { setTimeout(next, b.querySelector(".sd-bubble__tag") ? 900 : 450); });
+      }, 300);
+    }
+    setTimeout(next, 400);
+  })();
+</script>
 
 <section class="sd-section sd-wrap sd-about" data-reveal>
   <div class="sd-section__head">

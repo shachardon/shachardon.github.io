@@ -27,6 +27,8 @@
   --shadow: 0 1px 2px rgba(22, 24, 29, 0.04), 0 10px 30px rgba(22, 24, 29, 0.07);
   --shadow-lg: 0 2px 4px rgba(22, 24, 29, 0.04), 0 24px 60px rgba(22, 24, 29, 0.14);
   --header-bg: rgba(250, 248, 244, 0.82);
+  --bubble-model: #e8eaf9;
+  --bubble-model-line: #cdd1f2;
 
   --serif: "Instrument Serif", "Iowan Old Style", Georgia, serif;
   --sans: "Inter", -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -58,6 +60,8 @@
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.35);
     --shadow-lg: 0 2px 4px rgba(0, 0, 0, 0.3), 0 24px 60px rgba(0, 0, 0, 0.5);
     --header-bg: rgba(14, 16, 20, 0.78);
+    --bubble-model: #232839;
+    --bubble-model-line: #353c56;
     color-scheme: dark;
   }
 }
@@ -83,6 +87,8 @@
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.35);
   --shadow-lg: 0 2px 4px rgba(0, 0, 0, 0.3), 0 24px 60px rgba(0, 0, 0, 0.5);
   --header-bg: rgba(14, 16, 20, 0.78);
+  --bubble-model: #232839;
+  --bubble-model-line: #353c56;
   color-scheme: dark;
 }
 
@@ -287,7 +293,10 @@ body.sd {
   animation: sd-pop 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 .sd-bubble__who { display: block; font-size: 0.64rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
-.sd-bubble--model { left: -4%; top: 10%; border-bottom-left-radius: 6px; animation-delay: 0.35s; }
+.sd-bubble--model {
+  left: -4%; top: 10%; border-bottom-left-radius: 6px; animation-delay: 0.35s;
+  background: var(--bubble-model); border-color: var(--bubble-model-line); color: var(--ink);
+}
 .sd-bubble--human {
   right: -6%; top: 46%;
   background: var(--accent); color: var(--on-accent); border-color: transparent;
@@ -303,6 +312,18 @@ body.sd {
 }
 .sd-bubble--3 { left: 2%; top: auto; bottom: 4%; animation-delay: 1.95s; }
 
+/* Typing sequence (enabled by JS on the home hero) */
+.sd-typing .sd-bubble { opacity: 0; animation: none; }
+.sd-typing .sd-bubble.is-shown { opacity: 1; animation: sd-pop 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.sd-typing .sd-bubble__tag { opacity: 0; animation: none; }
+.sd-typing .is-done .sd-bubble__tag { opacity: 1; animation: sd-pop 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both, sd-glow 2.4s ease-in-out 0.45s 2; }
+.sd-bubble__rest { visibility: hidden; }
+.sd-caret {
+  display: inline-block; width: 2px; height: 1.05em; margin: 0 1px -0.18em;
+  background: currentColor; border-radius: 1px;
+  animation: sd-blink 0.9s steps(1) infinite;
+}
+@keyframes sd-blink { 50% { opacity: 0; } }
 @keyframes sd-pop { from { opacity: 0; transform: translateY(10px) scale(0.96); } to { opacity: 1; transform: none; } }
 @keyframes sd-glow { 0%, 100% { box-shadow: 0 0 0 0 rgba(217, 115, 74, 0); } 50% { box-shadow: 0 0 0 6px rgba(217, 115, 74, 0.25); } }
 
